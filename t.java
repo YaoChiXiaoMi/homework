@@ -97,9 +97,12 @@ public class ManagementThread_T
       }
     }
   }
-  
+  /**
+  *
+  **/
   private void SWdatadeal(String linkName, CaiJi CaiJiObj)
   {
+	 int i = 0;
     ArrayList<JSONObject> JAs = Swritedatas.getSWriteArrayListBylinkName(linkName, true);
     if ((JAs.size() > 0) && (CaiJiObj.isCaijiBZ()))
     {
